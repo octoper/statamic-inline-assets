@@ -3,6 +3,11 @@
     "license": "MIT",
     "type": "statamic-addon",
     "description": "Inline CSS or JS file for Statamic 3",
+    "authors": [{
+        "name": "Vaggelis Yfantis",
+        "email": "me@octoper.me",
+        "homepage": "https://octoper.me"
+    }],
     "autoload": {
         "psr-4": {
             "Octoper\\InlineAssets\\": "src"
