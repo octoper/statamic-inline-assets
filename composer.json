@@ -1,0 +1,22 @@
+{
+    "name": "octoper/statamic-inline-assets",
+    "license": "MIT",
+    "type": "statamic-addon",
+    "description": "Inline CSS or JS file for Statamic 3",
+    "autoload": {
+        "psr-4": {
+            "Octoper\\InlineAssets\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Inline Assets",
+            "description": "Inline CSS or JS file for Statamic 3"
+        },
+        "laravel": {
+            "providers": [
+                "Octoper\\InlineAssets\\ServiceProvider"
+            ]
+        }
+    }
+}
