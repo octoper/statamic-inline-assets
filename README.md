@@ -1,4 +1,4 @@
-[![Latest Version](https://img.shields.io/github/release/octoper/statamic-inline-assets.svg?style=flat-square)](https://github.com/spatie/statamic-responsive-images/releases)
+[![Latest Version](https://img.shields.io/github/release/octoper/statamic-inline-assets.svg?style=flat-square)](https://github.com/octoper/statamic-inline-assets/releases)
 ![Statamic 3.0+](https://img.shields.io/badge/Statamic-3.0+-FF269E?style=flat-square&link=https://statamic.com)
 
 # Inline assets
