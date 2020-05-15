@@ -9,7 +9,7 @@ class InlineAssets extends Tags
     public function index()
     {
         $asset = public_path(
-            $this->get(['src', 'path']),
+            $this->get(['src', 'path'])
         );
 
         return file_get_contents($asset);
