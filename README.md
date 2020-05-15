@@ -32,9 +32,9 @@ Pass a path to your file from the public directory to `inline_assets` tag.
 or
 
 ```twig
-<style>
+<script>
 {{ inline_assets src="js/site.js" }}
-</style>
+</script>
 ```
 
 ## Security
