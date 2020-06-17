@@ -23,5 +23,9 @@
                 "Octoper\\InlineAssets\\ServiceProvider"
             ]
         }
+    },
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^7.16"
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Octoper\InlineAssets;
 
+use Illuminate\Support\HtmlString;
 use Statamic\Tags\Tags;
 
 class InlineAssets extends Tags
@@ -12,6 +13,6 @@ class InlineAssets extends Tags
             $this->get(['src', 'path'])
         );
 
-        return file_get_contents($asset);
+        return new HtmlString(file_get_contents($asset));
     }
 }
