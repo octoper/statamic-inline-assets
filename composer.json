@@ -26,6 +26,7 @@
     },
     "require": {
         "php": ">=7.4",
-        "illuminate/support": "^7.16"
+        "illuminate/support": "^7.16",
+        "matthiasmullie/minify": "^1.3"
     }
 }

@@ -10,7 +10,7 @@ class ServiceProvider extends AddonServiceProvider
         InlineAssets::class,
     ];
 
-    public function boot()
+    public function boot(): void
     {
         parent::boot();
     }
