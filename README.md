@@ -25,7 +25,7 @@ Pass a path to your file from the public directory to `inline_assets` tag.
 
 ```twig
 <style>
-{{ inline_assets src="css/site.css" }}
+{{ inline_assets:css src="css/site.css" }}
 </style>
 ```
 
@@ -33,7 +33,15 @@ or
 
 ```twig
 <script>
-{{ inline_assets src="js/site.js" }}
+{{ inline_assets:js src="js/site.js" }}
+</script>
+```
+
+You can also minify your js or css assets.
+
+```twig
+<script>
+{{ inline_assets:js minify="true" src="js/site.js" }}
 </script>
 ```
 
