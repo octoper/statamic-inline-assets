@@ -3,7 +3,7 @@ name: Bug report
 about: Report a general library issue.
 title: "[BUG]"
 labels: ''
-assignees: ''
+assignees: octoper
 
 ---
 
