@@ -3,8 +3,8 @@
 namespace Octoper\InlineAssets;
 
 use Illuminate\Support\HtmlString;
-use Statamic\Tags\Tags;
 use MatthiasMullie\Minify;
+use Statamic\Tags\Tags;
 
 class InlineAssets extends Tags
 {
@@ -39,5 +39,4 @@ class InlineAssets extends Tags
 
         return new HtmlString($response);
     }
-
 }
