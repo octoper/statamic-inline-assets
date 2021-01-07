@@ -14,7 +14,11 @@ class InlineAssets extends Tags
             $this->params->get(['src', 'path'])
         );
 
-        $response = file_get_contents($asset);
+        if ($this->params->bool('ignore-missing')) {
+            $response = is_file($asset) ? file_get_contents($asset) : '';
+        } else {
+            $response = file_get_contents($asset);
+        }
 
         if ($this->params->bool('minify')) {
             $minifier = new Minify\JS($asset);
@@ -30,7 +34,11 @@ class InlineAssets extends Tags
             $this->params->get(['src', 'path'])
         );
 
-        $response = file_get_contents($asset);
+        if ($this->params->bool('ignore-missing')) {
+            $response = is_file($asset) ? file_get_contents($asset) : '';
+        } else {
+            $response = file_get_contents($asset);
+        }
 
         if ($this->params->bool('minify')) {
             $minifier = new Minify\CSS($asset);

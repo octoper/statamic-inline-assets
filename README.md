@@ -45,6 +45,14 @@ You can also minify your js or css assets.
 </script>
 ```
 
+You usually got a chicken or the egg problem with critical css, so you can ignore if missing
+
+```twig
+<script>
+{{ inline_assets:css ignore-missing="true" src="css/site.css" }}
+</script>
+```
+
 ## Security
 
 If you discover any security related issues, please email [me@octoper.me](mailto:me@octoper.me) instead of using the issue tracker.
