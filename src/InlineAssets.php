@@ -47,4 +47,21 @@ class InlineAssets extends Tags
 
         return new HtmlString($response);
     }
+
+    public function img(): HtmlString
+    {
+        $asset = public_path(
+            $this->params->get(['src', 'path'])
+        );
+
+        $content = file_get_contents($asset);
+        $mimetype = mime_content_type($asset);
+
+        // ensure +xml at end for svg files
+        if (strpos($mimetype, 'svg') !== false) {
+            $mimetype = rtrim($mimetype, '+xml').'+xml';
+        }
+
+        return new HtmlString('data:'.$mimetype.';base64,'.base64_encode($content));
+    }
 }

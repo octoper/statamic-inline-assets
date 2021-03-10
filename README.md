@@ -53,6 +53,15 @@ You usually got a chicken or the egg problem with critical css, so you can ignor
 </script>
 ```
 
+
+Also supports inlining images as base64_encoded strings
+
+```twig
+<img src="{{ inline_assets:img :src="image"}}" alt="{{ image:alt }}">
+
+Reults in <img src="data:image/jpeg;base64,/9j/ ..... " alt="Image alternative text">
+```
+
 ## Security
 
 If you discover any security related issues, please email [me@octoper.me](mailto:me@octoper.me) instead of using the issue tracker.
