@@ -15,7 +15,7 @@ composer require octoper/statamic-inline-assets
 
 ## Inline Asset tag
 
-Inline assets will inline your CSS or JS file to your HTML.
+Inline assets will inline your CSS or JS file to your HTML, or inline a file encoded with base64.
 
 Inline assets can help you speed of your Statamic website by inlining critical CSS  you can check more about that by reading this article [Extract critical CSS](https://web.dev/extract-critical-css/)
 
@@ -52,6 +52,19 @@ You usually got a chicken or the egg problem with critical css, so you can ignor
 {{ inline_assets:css ignore-missing="true" src="css/site.css" }}
 </script>
 ```
+
+You can also inline your file as an base64 encoded data stream, for example taking your favicon and including it inline.
+
+```twig
+<link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,{{ inline_assets:base64 src="favicon.ico" }}"/>
+```
+
+You usually got a chicken or the egg problem with critical css, so you can ignore if missing
+
+```twig
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{{ inline_assets:base64 ignore-missing="true" src="favicons/favicon.svg" }}">
+```
+
 
 ## Security
 
